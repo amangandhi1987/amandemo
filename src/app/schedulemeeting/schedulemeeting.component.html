@@ -1,0 +1,23 @@
+<br>
+<h2>Create a Meeting Schedule</h2>
+
+<h3>{{message}}</h3>
+<div class="login-container">
+<form>
+    client_id <br>
+   <input type="text" name="client_id" placeholder="Name" required [(ngModel)]="client_id" disabled="true">  <br>
+   topic<br>
+    <input type="text"  name="topic" placeholder="topic of meeting" required [(ngModel)]="topic"> 
+   <br>
+   number of people <br>
+    <input type="text" name="number_of_people" placeholder="Number of people" required [(ngModel)]="number_of_people"> 
+   <br>
+   start_time <br>
+    <input type="datetime-local"  name="start_time" required [(ngModel)]="start_time">
+    <br>
+    end_time <br>
+    <input type="datetime-local" name="end_time"  required [(ngModel)]="end_time">
+    <br>
+<button (click)="Schedule()">Schedule</button>
+</form>
+</div>

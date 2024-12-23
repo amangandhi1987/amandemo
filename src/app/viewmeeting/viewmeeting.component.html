@@ -1,0 +1,20 @@
+<div class="main-content"></div>
+    <h2>The meeting scheduled for client are </h2>
+    <table border="1" >
+        <thead style="background-color: blue; color: white;">
+            <th>Client_id</th>
+            <th>topic</th>
+            <th>number_of_people</th>
+            <th>start_time</th>
+            <th>end_time</th>
+        </thead>
+        <tr *ngFor="let meeting of meetings">
+            <td>{{meeting.client_id}}</td>
+            <td>{{meeting.topic}}</td>
+            <td>{{meeting.number_of_people}}</td>
+            <td>{{meeting.start_time}}</td>
+            <td>{{meeting.end_time}}</td>
+
+        </tr>
+    </table>
+
